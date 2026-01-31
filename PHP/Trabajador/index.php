@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
         * {
             padding: 0;
             margin: 0;
@@ -45,7 +44,6 @@
             font-size: 24px;
         }
 
-        /* Estilos para el formulario */
         form {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -113,13 +111,11 @@
     </style>
 </head>
 <body>
-    <!-- Reloj Digital -->
     <div class="reloj">
         <p class="fecha"></p>
         <p class="tiempo"></p>
     </div>
 
-    <!-- Formulario para registrar evento -->
     <h2>Registro de Evento - Reloj Checador</h2>
     <form action="../SOAP/registrar_evento.php" method="POST">
         <label for="idTrabajador">ID de Trabajador:</label>
@@ -136,7 +132,6 @@
         <button type="submit">Registrar Evento</button>
     </form>
 
-    <!-- Script del reloj -->
     <script>
         const $tiempo = document.querySelector('.tiempo'),
         $fecha = document.querySelector('.fecha');
@@ -165,3 +160,4 @@
     </script>
 </body>
 </html>
+
