@@ -2,13 +2,11 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $idTrabajador = $_POST['idTrabajador'];
     $tipoEvento = $_POST['tipoEvento'];
-    $wsdl = "http://localhost:8080/ServicioReloj/RelojChecadorService?wsdl"; // Asegúrate de que esta URL sea correcta
+    $wsdl = "http://localhost:8080/ServicioReloj/RelojChecadorService?wsdl"; 
 
     try {
-        // Crear cliente SOAP
         $client = new SoapClient($wsdl, array('trace' => 1));
 
-        // Definir los parámetros para el servicio
         $params = array(
             'idTrabajador' => $idTrabajador,  // ID del trabajador
             'tipoEvento' => $tipoEvento       // Tipo de evento ('entrada', 'salidacomer', etc.)
@@ -108,4 +106,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
