@@ -1,5 +1,5 @@
 <?php
-// Configuración de la base de datos
+
 $host = "localhost";
 $user = "root";
 $password = "";
@@ -115,3 +115,4 @@ if (!$result) {
     ?>
 </body>
 </html>
+
