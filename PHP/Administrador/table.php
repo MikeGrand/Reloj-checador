@@ -105,11 +105,11 @@ if (!$result) {
     <?php endif; ?>
 
     <?php
-    // Liberar resultados y cerrar conexión
     $result->free();
     $mysqli->close();
     ?>
 </body>
 </html>
+
 
 
