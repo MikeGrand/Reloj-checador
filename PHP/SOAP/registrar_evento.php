@@ -12,11 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'tipoEvento' => $tipoEvento       // Tipo de evento ('entrada', 'salidacomer', etc.)
         );
 
-        // Llamar al servicio SOAP
         $response = $client->__soapCall('registrarEvento', array($params));
 
-        
-        // Mostrar la respuesta del servicio con estilos generales
         echo "
         <!DOCTYPE html>
         <html lang='en'>
@@ -106,5 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
 
