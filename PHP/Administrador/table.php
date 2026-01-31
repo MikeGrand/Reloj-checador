@@ -5,19 +5,15 @@ $user = "root";
 $password = "";
 $dbname = "relojchecador";
 
-// Conectar a la base de datos
 $mysqli = new mysqli($host, $user, $password, $dbname);
 
-// Verificar conexión
 if ($mysqli->connect_error) {
     die("Error en la conexión: " . $mysqli->connect_error);
 }
 
-// Consulta a la base de datos
 $query = "SELECT * FROM entradassalidas";
 $result = $mysqli->query($query);
 
-// Verificar si hay resultados
 if (!$result) {
     die("Error en la consulta: " . $mysqli->error);
 }
@@ -115,4 +111,5 @@ if (!$result) {
     ?>
 </body>
 </html>
+
 
