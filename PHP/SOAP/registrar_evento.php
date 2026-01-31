@@ -1,11 +1,7 @@
 <?php
-// Verificar si el formulario fue enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los datos del formulario
     $idTrabajador = $_POST['idTrabajador'];
     $tipoEvento = $_POST['tipoEvento'];
-
-    // Dirección del WSDL del servicio web
     $wsdl = "http://localhost:8080/ServicioReloj/RelojChecadorService?wsdl"; // Asegúrate de que esta URL sea correcta
 
     try {
@@ -112,3 +108,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
