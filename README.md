@@ -33,4 +33,14 @@ frontend: utiliza js para el reloj, formulario y toda la pagina los estilos tien
 con conexión obligatoria a internet
 forntend administrador: conectado a la base de datos, cambiar el usuario, contraseña si se requiere, pero en este caso no es asi
 
-todas estas tecnologias se usaron con Xampp con configuraciones ya establecidas
+todas estas tecnologias se usaron con Xampp con configuraciones ya establecidas. 
+
+Puente de Java a MYSQL: 
+
+En la carpeta Librerias_JAR se encontrara un archivo zip, ese archivo debe ser descomprimido e implementado en el proyecto ya que es básicamente el puente entre el proyecto y la base de datos MySQL.
+
+Sirve para que el proyecto Java pueda conectarse, leer y escribir datos en MySQL.
+
+Sin ese conector: Java no entiende cómo hablar con MySQL
+Con ese conector: Puede hacer SELECT, INSERT, UPDATE, DELETE, Manejar transacciones, Autenticación con el servidor MySQL, Conexiones seguras (SSL)
+
