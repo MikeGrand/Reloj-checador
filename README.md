@@ -42,5 +42,4 @@ En la carpeta Librerias_JAR se encontrara un archivo zip, ese archivo debe ser d
 Sirve para que el proyecto Java pueda conectarse, leer y escribir datos en MySQL.
 
 Sin ese conector: Java no entiende cómo hablar con MySQL
-Con ese conector: Puede hacer SELECT, INSERT, UPDATE, DELETE, Manejar transacciones, Autenticación con el servidor MySQL, Conexiones seguras (SSL)
-
+Con ese conector: Puede hacer SELECT, INSERT, UPDATE, DELETE, Manejar transacciones, Autenticación con el servidor MySQL, Conexiones seguras (SSL).
